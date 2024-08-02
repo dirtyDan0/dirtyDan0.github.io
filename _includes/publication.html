@@ -1,0 +1,61 @@
+<div style="display: flex; align-items: stretch; margin-bottom: 20px">
+  <img
+    src="{{ include.image_url }}"
+    alt="{{ include.image_alt }}"
+    style="width: auto; height: 150px; margin-right: 20px; object-fit: cover"
+  />
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1;
+    "
+  >
+    <h4 style="margin: 0; font-size: 1em">
+      <a
+        href="{{ include.paper_link }}"
+        target="_blank"
+        style="text-decoration: none; color: inherit"
+      >
+        {{ include.title }}
+      </a>
+    </h4>
+    <p style="margin: 2px 0">{{ include.authors }}</p>
+    <p style="margin: 2px 0">{{ include.publication }}</p>
+    <p style="margin: 2px 0">{{ include.abstract }}</p>
+
+    <!-- Conditional links -->
+    <div style="margin-top: 10px; display: flex; gap: 10px">
+      {% if include.pdf_link %}
+      <a
+        href="{{ include.pdf_link }}"
+        target="_blank"
+        style="text-decoration: none; color: #007bff"
+        >PDF</a
+      >
+      {% endif %} {% if include.project_page_link %}
+      <a
+        href="{{ include.project_page_link }}"
+        target="_blank"
+        style="text-decoration: none; color: #007bff"
+        >Project Page</a
+      >
+      {% endif %} {% if include.code_link %}
+      <a
+        href="{{ include.code_link }}"
+        target="_blank"
+        style="text-decoration: none; color: #007bff"
+        >Code</a
+      >
+      {% endif %} {% if include.demo_link %}
+      <a
+        href="{{ include.demo_link }}"
+        target="_blank"
+        style="text-decoration: none; color: #007bff"
+        >Demo</a
+      >
+      {% endif %}
+    </div>
+  </div>
+</div>

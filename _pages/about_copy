@@ -1,0 +1,37 @@
+---
+permalink: /
+title: "Bio"
+author_profile: true
+---
+
+Lumeng Wu is an incoming master student at []. He received his B.Eng from East China Normal University in 2024.
+
+# News
+
+[2024-07] xxxxxx
+
+# Publications
+
+{% include publication.html
+    image_url="/images/image-alignment-300x200.jpg"
+    image_alt="Sample Image"
+    paper_link="https://example.com/paper-link"
+    title="Title of the Paper"
+    authors="Your Name, Co-author Name, Another Co-author"
+    publication="Journal Name, Year"
+    abstract="A brief summary of the paper goes here."
+    pdf_link="https://www.baidu.com"
+    project_page_link="https://www.baidu.com"
+%}
+
+{% include publication.html
+image_url="/images/image-alignment-300x200.jpg"
+image_alt="Another Image"
+paper_link="https://example.com/another-paper-git link"
+title="Another Paper Title"
+authors="Your Name, Co-author Name"
+publication="Conference Name, Year"
+abstract="Another brief summary of the paper."
+pdf_link="https://www.baidu.com"
+
+%}
